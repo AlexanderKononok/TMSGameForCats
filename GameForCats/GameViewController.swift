@@ -23,7 +23,7 @@ class GameViewController: UIViewController {
   @IBAction func backToMainViewButtonPressed(_ sender: Any) {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let viewController = storyboard.instantiateViewController(identifier: String(describing: ViewController.self)) as! ViewController
-    
+
     viewController.modalPresentationStyle = .fullScreen
     self.present(viewController, animated: true)
   }

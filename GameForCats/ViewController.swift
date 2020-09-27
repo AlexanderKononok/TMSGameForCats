@@ -27,8 +27,10 @@ class ViewController: UIViewController {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let gameViewController = storyboard.instantiateViewController(identifier: String(describing: GameViewController.self)) as! GameViewController
     
-    gameViewController.modalPresentationStyle = .fullScreen
-    self.present(gameViewController, animated: true)
+    //gameViewController.modalPresentationStyle = .fullScreen
+    //self.present(gameViewController, animated: true)
+    self.navigationController?.pushViewController(gameViewController, animated: true)
+    
   }
   
 }
